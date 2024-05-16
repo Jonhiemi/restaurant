@@ -1,139 +1,211 @@
-Por supuesto, aquí tienes el CSS actualizado con el uso de Flexbox, completamente responsive y utilizando colores pasteles como naranja, amarillo y verde:
-
-```css
-/* Estilos generales */
+/*Claro, aquí tienes un código CSS usando Flexbox para hacer que la página sea completamente responsiva, con una paleta de colores pastel incluyendo naranja, amarillo, turquesa, gris y rojo.*/
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Color de fondo */
-    color: #333; /* Color del texto principal */
+    line-height: 1.6;
+    background-color: #f7f7f7;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px; /* Ancho máximo para mantener el diseño ordenado */
-}
-
-/* Estilos para el encabezado */
+/* Header */
 header {
-    background-color: #f8e0bc; /* Color de fondo */
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #ffab91; /* Naranja Pastel */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 header h1 {
     margin: 0;
-    color: #ff8c00; /* Color del texto del encabezado */
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffe082; /* Amarillo Pastel */
+    padding: 0.5rem 0;
 }
 
 nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding: 0;
-    display: flex; /* Flexbox */
-    justify-content: center; /* Centrar elementos horizontalmente */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
+    color: #333;
     text-decoration: none;
-    color: #666; /* Color de los enlaces */
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ff8c00; /* Color al pasar el ratón por encima */
+/* Hero Section */
+.hero {
+    background-color: #80deea; /* Turquesa Pastel */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-/* Estilos para las secciones */
-section {
-    padding: 50px 0;
+.hero h2 {
+    margin: 0 0 20px;
 }
 
-section h2 {
-    margin-bottom: 20px;
-    color: #ff8c00; /* Color del título de la sección */
+.hero p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
 }
 
+.hero button {
+    background-color: #ffab91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Container */
 .container {
-    display: flex; /* Flexbox */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas si es necesario */
-    justify-content: space-around; /* Espaciado uniforme entre los elementos */
-}
-
-.menu-item {
-    flex: 1 0 30%; /* Flexbox */
-    margin-bottom: 30px;
-    background-color: #fdf5e6; /* Color de fondo */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-    overflow: hidden;
-}
-
-.menu-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.menu-item h3 {
-    margin: 20px 0 10px;
-    color: #ff8c00; /* Color del título del plato */
-}
-
-.menu-item p {
-    margin: 0 20px 20px;
-}
-
-/* Estilos para los formularios */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fdf5e6; /* Color de fondo */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 1200px;
+    margin: auto;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+/* Section Styles */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    color: #ff7043; /* Rojo Pastel */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+}
+
+/* Menu Highlight */
+.menu-highlight ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-highlight ul li {
+    margin: 10px 0;
+}
+
+/* Reservation Form */
+.reservation-form input,
+.contact-form input,
+.contact-form textarea {
+    display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-input[type="submit"] {
-    background-color: #ff8c00; /* Color de fondo */
-    color: #fff; /* Color del texto */
+button {
+    background-color: #ff7043;
+    color: white;
     border: none;
     padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #ffa500; /* Color de fondo al pasar el ratón por encima */
+/* Testimonials */
+.testimonials p {
+    background-color: #e0f7fa; /* Turquesa Claro */
+    padding: 20px;
+    border-left: 5px solid #ffab91; /* Naranja Pastel */
+    margin: 20px 0;
 }
 
-/* Estilos para el pie de página */
+/* Events */
+.events p {
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f0f4c3; /* Verde Amarillento Pastel */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+/* Footer */
 footer {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px 0;
+    background-color: #cfd8dc; /* Gris Pastel */
+    color: #333;
     text-align: center;
+    padding: 20px 0;
 }
 
-footer a {
-    color: #ff8c00; /* Color del enlace */
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 1rem;
+}
+
+footer nav ul li a {
+    color: #333;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer p {
+    margin: 10px 0;
 }
-```
 
-Este CSS utiliza Flexbox para crear un diseño más flexible y responsivo, y los colores pasteles como naranja, amarillo y verde están definidos para cada elemento. Este diseño debería adaptarse bien a diferentes tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio.
+footer img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery-images {
+        justify-content: center;
+    }
+}
